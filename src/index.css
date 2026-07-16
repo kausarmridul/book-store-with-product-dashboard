@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-col-1: #cc9600;
+  --color-col-2: #4b330b;
+  --color-col-3: #a59f9f;
+  --color-col-4: #f6f6f3;
+  --color-col-5: #f1f1f1;
+  --color-col-6: #7d7d7d;
+  --color-col-7: #b01212;
+  --color-col-8: #ffcd71;
+  --color-col-9: #2264e5;
+  --color-col-10: #f4f7fc;
+  --font-inter: "Inter", sans-serif;
+  --font-bona: "Bona Nova", serif;
+  --spacing-full: 100%;
+  --tracking-sm: 2%;
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .img-fluid {
+    @apply max-w-full h-auto;
+  }
+}
+
+@layer utilities {
+  .radial-text-1 {
+    background: radial-gradient(50% 50% at 50% 50%, #cc9600 0%, #ff7700 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
